@@ -53,6 +53,7 @@
 # endif
 # if defined(__APPLE__)
 /* For OS X >= 10.7 malloc can't be used */
+#include <AvailabilityMacros.h>
 #  if MAC_OS_X_VERSION_MAX_ALLOWED >= 1070
 #   define FFI_MMAP_EXEC_WRIT 1
 #  endif
